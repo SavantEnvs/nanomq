@@ -1,0 +1,9 @@
+project: savantenvs/nanomq
+target: fuzz_rest_api
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rest_api/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rest_api
+    libfuzzer: true
+    timeout: 5

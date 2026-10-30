@@ -1,0 +1,6 @@
+project: savantenvs/nanomq
+target: fuzz_sub_handler
+cmds:
+  - cmd: /mayhem/fuzz_sub_handler
+    libfuzzer: true
+    timeout: 5
