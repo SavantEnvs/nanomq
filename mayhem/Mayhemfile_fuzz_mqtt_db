@@ -1,0 +1,6 @@
+project: savantenvs/nanomq
+target: fuzz_mqtt_db
+cmds:
+  - cmd: /mayhem/fuzz_mqtt_db
+    libfuzzer: true
+    timeout: 5

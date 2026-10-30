@@ -1,0 +1,1 @@
+mqtt-tcp://user:pass@broker.example.com:1883/topic/a?x=1&y=2#frag
