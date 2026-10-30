@@ -1,0 +1,6 @@
+project: savantenvs/nanomq
+target: fuzz_mqtt_common_decoder
+cmds:
+  - cmd: /mayhem/fuzz_mqtt_common_decoder
+    libfuzzer: true
+    timeout: 5

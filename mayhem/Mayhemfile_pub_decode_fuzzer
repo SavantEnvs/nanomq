@@ -1,0 +1,10 @@
+project: savantenvs/nanomq
+target: pub_decode_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pub_decode_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/pub_decode_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/pub_decode_fuzzer/pub_decode_fuzzer.dict
+    timeout: 5
