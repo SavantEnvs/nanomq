@@ -1,0 +1,10 @@
+b64 '' -> '' (0) -> 0 bytes ''
+b64 'f' -> 'Zg==' (4) -> 1 bytes 'f'
+b64 'fo' -> 'Zm8=' (4) -> 2 bytes 'fo'
+b64 'foo' -> 'Zm9v' (4) -> 3 bytes 'foo'
+b64 'hello, nanomq' -> 'aGVsbG8sIG5hbm9tcQ==' (20) -> 13 bytes 'hello, nanomq'
+publish_qos0: rv=0 type=3 qos=0 retain=0 topic='a/b/c' payload='hello'
+publish_qos1_retain: rv=0 type=3 qos=1 retain=1 topic='t/x' payload='payload!'
+connect_v311: rv=0 type=1 ver=4 keepalive=60 clean=1 client='nanoclient'
+truncated_publish: rv=2 type=3
+repub local='sensors/+/temp' remote='cloud/sensors/+/temp' in='sensors/7/temp' -> '7/temp'

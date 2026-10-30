@@ -1,0 +1,9 @@
+project: savantenvs/nanomq
+target: fuzz_rule_sql
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rule_sql/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rule_sql
+    libfuzzer: true
+    timeout: 5
