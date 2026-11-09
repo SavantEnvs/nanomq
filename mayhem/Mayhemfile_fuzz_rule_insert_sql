@@ -1,0 +1,9 @@
+project: savantenvs/nanomq
+target: fuzz_rule_insert_sql-mined-9944b23
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rule_insert_sql-mined-9944b23/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rule_insert_sql
+    libfuzzer: true
+    timeout: 5

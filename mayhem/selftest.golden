@@ -1,0 +1,4 @@
+publish_qos0: decode=0 qos=0 id=0 topic=a/b payload={"a":1} clientid=client username=user insert=0 rules=1
+publish_qos1: decode=0 qos=1 id=42 topic=t/x payload=hi clientid=client username=user insert=0 rules=1
+publish_plain: decode=0 qos=0 id=0 topic=a/b payload=xyzw clientid=client username=user insert=0 rules=1
+truncated_publish: decode=130
