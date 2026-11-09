@@ -1,0 +1,7 @@
+publish_qos0: decode=0 insert=0 rules=1
+row: Qos=0 Id=0 Topic=a/b Clientid=client Username=user Password=pass Timestamp=<now> Payload={"a":1}
+publish_qos1: decode=0 insert=0 rules=1
+row: Qos=1 Id=42 Topic=t/x Clientid=client Username=user Password=pass Timestamp=<now> Payload=hi
+publish_plain: decode=0 insert=0 rules=1
+row: Qos=0 Id=0 Topic=a/b Clientid=client Username=user Password=pass Timestamp=<now> Payload=xyzw
+truncated_publish: decode=130
